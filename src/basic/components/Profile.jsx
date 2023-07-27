@@ -1,10 +1,10 @@
-import React from "react";
-import Avartar from "./Avartar";
+import React from 'react';
+import Avartar from './Avartar';
 
-export default function Profile({ isnew, img, name, title }) {
+export default function Profile({ image, name, title, isNew }) {
   return (
-    <div className="profile">
-      <Avartar isnew={isnew} img={img} />
+    <div className='profile'>
+      <Avartar image={image} isNew={isNew} />
       <h1>{name}</h1>
       <p>{title}</p>
     </div>

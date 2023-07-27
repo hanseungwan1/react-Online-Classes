@@ -1,6 +1,6 @@
-export function personReducer(person, action) {
+export default function personReducer(person, action) {
   switch (action.type) {
-    case "updated": {
+    case 'updated': {
       const { prev, current } = action;
       return {
         ...person,
@@ -12,21 +12,17 @@ export function personReducer(person, action) {
         }),
       };
     }
-    case "added": {
+    case 'added': {
       const { name, title } = action;
       return {
         ...person,
         mentors: [...person.mentors, { name, title }],
       };
     }
-    case "deleted": {
-      const { name } = action;
+    case 'deleted': {
       return {
         ...person,
-        mentors: person.mentors.filter((el) => {
-          if (el.name === name) return false;
-          return true;
-        }),
+        mentors: person.mentors.filter((mentor) => mentor.name !== action.name),
       };
     }
     default: {

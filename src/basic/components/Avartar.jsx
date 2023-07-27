@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-export default function Avartar({ img, isnew }) {
+export default function Avartar({ image, isNew }) {
   return (
-    <div className="avartar_containner">
-      {isnew ? <div className="new_icon">NEW</div> : null}
-      <img className="photo" src={img} alt="avartar" />
+    <div className='avatar'>
+      <img className='photo' src={image} alt='avatar' />
+      {isNew && <span className='new'>New</span>}
     </div>
   );
 }
