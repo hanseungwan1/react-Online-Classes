@@ -1,0 +1,33 @@
+.item_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  align-items: center;
+}
+.item_name_container {
+  display: flex;
+}
+
+.item_name_container input {
+  margin-right: 10px;
+}
+
+.item_name_container label {
+  color: white;
+  font-weight: bold;
+}
+
+.item_container button {
+  background-color: gray;
+  padding: 4px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.transh_icon {
+  color: white;
+  cursor: pointer;
+}

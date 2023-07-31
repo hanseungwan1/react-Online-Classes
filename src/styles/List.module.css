@@ -1,0 +1,7 @@
+.list_container {
+  height: 600px;
+  background-color: #22243a;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}

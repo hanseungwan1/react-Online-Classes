@@ -1,0 +1,33 @@
+.footer_container {
+  padding: 16px;
+  background-color: #1a1c34;
+}
+
+.footer_wrapper {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.footer_container input {
+  width: 80%;
+  height: 100%;
+  border-radius: 8px 0px 0px 8px;
+  padding: 17px;
+  border: none;
+  font-size: 18px;
+}
+
+.footer_container button {
+  width: 20%;
+  border-radius: 0px 8px 8px 0;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+  color: white;
+  background-color: orange;
+  font-size: 24px;
+  font-weight: bolder;
+  min-width: 50px;
+}

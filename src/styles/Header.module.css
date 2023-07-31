@@ -1,0 +1,28 @@
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1a1c34;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.sun_icon {
+  color: white;
+  cursor: pointer;
+  transition: all 80ms ease-in;
+}
+
+.sun_icon:hover {
+  transform: scale(1.2);
+}
+
+.header_container button {
+  background-color: transparent;
+  color: orange;
+  font-size: 24px;
+  margin-left: 20px;
+  border: none;
+  cursor: pointer;
+}
